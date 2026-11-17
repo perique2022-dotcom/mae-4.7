@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f3ed">
+  <meta name="description" content="Uma atualização muito especial: Mãe 4.7. Feliz aniversário!">
+  <title>MÃE 4.7 | Uma atualização especial</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-shapes" aria-hidden="true">
+    <span class="shape shape-one"></span>
+    <span class="shape shape-two"></span>
+    <span class="shape shape-three"></span>
+  </div>
+
+  <main class="app">
+
+    <header class="topbar">
+      <div class="brand">MÃE <span>4.7</span></div>
+      <div class="progress-area">
+        <span id="progress-text">INÍCIO</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- TELA 1: ABERTURA -->
+    <section class="screen active" id="screen-1" data-screen="1">
+      <div class="content opening">
+        <div class="version-tag">
+          <span class="status-dot"></span>
+          ATUALIZAÇÃO DISPONÍVEL
+        </div>
+
+        <div class="big-number">4.7</div>
+
+        <p class="eyebrow">UMA NOVA VERSÃO DE</p>
+        <h1>MÃE <span>4.7</span></h1>
+
+        <p class="intro-text">
+          47 anos de experiência, personalidade
+          e algumas funcionalidades exclusivas.
+        </p>
+
+        <div class="update-card">
+          <div class="update-icon">✦</div>
+          <div>
+            <strong>Atualização especial</strong>
+            <p>Uma experiência desenvolvida especialmente para você.</p>
+          </div>
+          <span class="update-check">✓</span>
+        </div>
+
+        <button class="primary-button" data-next="2">
+          INICIAR EXPERIÊNCIA <span>→</span>
+        </button>
+
+        <p class="small-note">Tempo estimado: 2–3 minutos</p>
+      </div>
+    </section>
+
+    <!-- TELA 2: QUIZ -->
+    <section class="screen" id="screen-2" data-screen="2">
+      <div class="content">
+        <div class="section-tag">ETAPA 01 · TESTE DE SISTEMA</div>
+        <h2>Vamos testar<br>algumas habilidades?</h2>
+        <p class="section-description">
+          Toda boa versão tem recursos especiais. Vamos descobrir alguns?
+        </p>
+
+        <div class="quiz-card">
+          <div class="quiz-top">
+            <span id="question-counter">PERGUNTA 01 DE 03</span>
+            <span class="quiz-symbol">✳</span>
+          </div>
+
+          <h3 id="question-text">Qual é uma das habilidades mais impressionantes de uma mãe?</h3>
+
+          <div class="answers" id="answers">
+            <button class="answer-button" data-answer="0">Adivinhar o que está acontecendo só pelo olhar.</button>
+            <button class="answer-button" data-answer="1">Encontrar qualquer coisa em tempo recorde.</button>
+            <button class="answer-button" data-answer="2">Ter sempre uma opinião pronta.</button>
+          </div>
+
+          <p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-footer">
+          <span>Não existe resposta errada. Ou quase. 😂</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TELA 3: FUNCIONALIDADES -->
+    <section class="screen" id="screen-3" data-screen="3">
+      <div class="content">
+        <div class="section-tag">ETAPA 02 · NOTAS DA VERSÃO</div>
+        <h2>O que vem<br>nesta atualização?</h2>
+        <p class="section-description">
+          Confira algumas funcionalidades que fazem parte do pacote Mãe 4.7.
+        </p>
+
+        <div class="feature-list">
+          <article class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <div>
+              <span class="feature-label">RECURSO 01</span>
+              <h3>Memória extraordinária</h3>
+              <p>Lembra de coisas que todo mundo já esqueceu.</p>
+            </div>
+            <span class="feature-status">ATIVO</span>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🔎</div>
+            <div>
+              <span class="feature-label">RECURSO 02</span>
+              <h3>Detector de problemas</h3>
+              <p>Identifica que tem algo errado antes de qualquer pessoa.</p>
+            </div>
+            <span class="feature-status">ATIVO</span>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">💬</div>
+            <div>
+              <span class="feature-label">RECURSO 03</span>
+              <h3>Opinião integrada</h3>
+              <p>Funciona mesmo quando ninguém pediu. 😂</p>
+            </div>
+            <span class="feature-status">ATIVO</span>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">❤️</div>
+            <div>
+              <span class="feature-label">RECURSO 04</span>
+              <h3>Modo mãe</h3>
+              <p>Carinho, cuidado e preocupação em funcionamento constante.</p>
+            </div>
+            <span class="feature-status">ATIVO</span>
+          </article>
+        </div>
+
+        <button class="primary-button" data-next="4">
+          CONTINUAR <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- TELA 4: CUPONS -->
+    <section class="screen" id="screen-4" data-screen="4">
+      <div class="content">
+        <div class="section-tag">ETAPA 03 · BENEFÍCIOS EXCLUSIVOS</div>
+        <h2>Seus presentes<br>já estão disponíveis.</h2>
+        <p class="section-description">
+          A versão 4.7 vem com alguns benefícios especiais. Toque para revelar!
+        </p>
+
+        <div class="coupon-grid">
+          <button class="coupon-card" data-coupon="0">
+            <span class="coupon-icon">🤗</span>
+            <strong>VALE 1</strong>
+            <span class="coupon-name">Abraço</span>
+            <span class="coupon-action">TOQUE PARA REVELAR</span>
+          </button>
+
+          <button class="coupon-card" data-coupon="1">
+            <span class="coupon-icon">🎬</span>
+            <strong>VALE 2</strong>
+            <span class="coupon-name">Filme</span>
+            <span class="coupon-action">TOQUE PARA REVELAR</span>
+          </button>
+
+          <button class="coupon-card" data-coupon="2">
+            <span class="coupon-icon">☕</span>
+            <strong>VALE 3</strong>
+            <span class="coupon-name">Folga</span>
+            <span class="coupon-action">TOQUE PARA REVELAR</span>
+          </button>
+        </div>
+
+        <p class="coupon-hint" id="coupon-hint">
+          Você pode revelar todos os benefícios!
+        </p>
+
+        <button class="primary-button" id="coupon-continue" disabled>
+          CONTINUAR <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- TELA 5: FINAL -->
+    <section class="screen" id="screen-5" data-screen="5">
+      <div class="content final-content">
+        <div class="celebration-icon">✦</div>
+        <div class="section-tag">ATUALIZAÇÃO CONCLUÍDA</div>
+
+        <p class="eyebrow">HOJE É DIA DE COMEMORAR</p>
+        <h2 class="final-title">PARABÉNS,<br><span>MÃE!</span></h2>
+
+        <div class="age-display">47 <span>ANOS</span></div>
+
+        <p class="final-message">
+          Mais uma versão lançada com sucesso!
+          <br><br>
+          Obrigado por ser essa mãe incrível.
+          Te amo, mãe! ❤️
+        </p>
+
+        <div class="final-stamp">
+          <span>✓</span> SISTEMA ATUALIZADO COM SUCESSO
+        </div>
+
+        <p class="next-update">Próxima atualização: 48.0 😂</p>
+
+        <button class="primary-button" id="restart-button">
+          REVER EXPERIÊNCIA <span>↻</span>
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span id="easter-egg-trigger">feito com ❤️ e algumas linhas de código</span>
+    </footer>
+
+  </main>
+
+  <!-- MODAL DOS CUPONS -->
+  <div class="modal-overlay" id="coupon-modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Fechar">×</button>
+      <div class="modal-icon" id="modal-icon">🎁</div>
+      <p class="modal-label">BENEFÍCIO DESBLOQUEADO</p>
+      <h3 id="modal-title">Vale abraço!</h3>
+      <p id="modal-description">Resgatável a qualquer momento.</p>
+      <button class="primary-button" id="modal-ok">ACEITAR PRESENTE</button>
+    </div>
+  </div>
+
+  <!-- SEGREDO ESCONDIDO -->
+  <div class="modal-overlay" id="secret-modal" aria-hidden="true">
+    <div class="modal-card secret-card">
+      <button class="modal-close" id="secret-close" aria-label="Fechar">×</button>
+      <div class="modal-icon">💌</div>
+      <p class="modal-label">VOCÊ DESCOBRIU O SEGREDO!</p>
+      <h3>Uma mensagem especial</h3>
+      <p>
+        Essa atualização foi desenvolvida por uma pessoa que tem muita sorte
+        de ter você como mãe.
+        <br><br>
+        Feliz aniversário! ❤️
+      </p>
+      <button class="primary-button" id="secret-ok">❤️</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+  <div class="confetti-container" id="confetti-container" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
